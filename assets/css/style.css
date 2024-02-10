@@ -1,0 +1,288 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+/* Mobile Nav Bar */
+
+.desktop-nav {
+    display: none;
+}
+
+.mobile-header {
+    position: relative;
+    z-index: 101;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 9rem;
+    padding-left: 2rem;
+}
+
+.mobile-header .container {
+    display: flex;
+}
+
+.mobile-header img {
+    max-width: 12rem;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+}
+
+.hamburger .bar, .hamburger::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2rem;
+    margin: .5rem 0;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(-45deg) translate(.1rem, -.3rem);
+}
+
+.hamburger.is-active .bar {
+    transform: rotate(45deg) translate(.2rem, .4rem);
+}
+
+.mobile-nav {
+    font-size: 1.7rem;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    min-height: 100dvh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: #fff;
+    padding: 9rem 0 0 2rem;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    right: 0;
+} 
+
+.mobile-nav a {
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav p {
+    padding-right: 4rem;
+    line-height: 1.65;
+    font-size: 1.5rem;
+}
+
+.mobile-nav a:active {
+    color: #3c54e5;
+}
+
+.search {
+    max-width: fit-content;
+    margin-top: 25rem;
+    background-color: rgba(136, 136, 136, 0.03);
+    padding: 2rem;
+    border-radius: 5rem;
+}
+
+.search img {
+    max-width: 2rem;
+}
+
+/* Mobile hero */
+
+#hero {
+    padding: 0;
+    position: relative;
+}
+
+.hero-bg1 {
+    position: relative;
+    min-height: 40rem;
+    overflow: hidden;
+    background: url(/assets/imgs/headerBanner1.png) no-repeat center;
+    background-size: cover;
+}
+
+.hero-bg2 {
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    background: url(/assets/imgs/headerBanner2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* Mobile Strengths Section */
+
+.strengths {
+    padding: 0 2.5rem;
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top: 40rem;
+}
+
+.card1, .card2, .card3 {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.card1 img, .card2 img, .card3 img {
+    border-radius: 2rem;
+}
+
+.strengths p {
+    font-size: 1.2rem;
+}
+
+.strengths .top-card p {
+    font-weight: 600;
+}
+
+.strengths .bottom-card p {
+    line-height: 1.65;
+}
+
+.strengths h3 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: rgba(23, 22, 26, 0.83);
+    border-radius: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* 
+
+
+ <section class="strengths">
+    <div class="card1">
+        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
+        <div class="card-content">
+            <div class="top-card">
+                <p>ORGANISATION</p>
+                <h3>Solid & fluid</h3>
+            </div>
+            <div class="bottom-card">
+                <p>We are a growing, skilled organisation who prides ourselves on our ability to quickly adapt and overcome entrepreneurial challenges in dynamic markets.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
+        <div class="card-content">
+            <div class="top-card">
+                <p>EXPERTISE</p>
+                <h3>Knowledge meets experience</h3>
+            </div>
+            <div class="bottom-card">
+                <p>PressEnter is the crossroads where industry knowledge meets hands-on experience. We employ the best talents in the industry, or we make them ourselves.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card3">
+        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
+        <div class="card-content">
+            <div class="top-card">
+                <p>CULTURE</p>
+                <h3>People focus</h3>
+            </div>
+            <div class="bottom-card">
+                <p>It's not just what we deliver, but how we deliver it. We operate on a foundation of transparency, camaraderie and mentorship. Our team members are the only 
+                    things better than our products, and we don't let them forget it.</p>
+            </div>
+        </div>
+    </div>*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop Nav Bar
+
+.desktop-nav .container{
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav .container ul {
+    display: flex;
+} */
+
+
+
+
+/* 
+<nav class="desktop-nav">
+    <img src="assets/imgs/PressEnter-Logo-Animated-Black.gif" alt="PressEnter Animated Logo">
+    <ul>
+        <a href=""><li>Home</li></a>
+        <a href=""><li>Careers</li></a>
+        <a href=""><li>Brands</li></a>
+        <a href=""><li>About Us</li></a>
+        <a href=""><li>News</li></a>
+        <a href=""><li>Contact</li></a>
+    </ul>
+</nav> */
