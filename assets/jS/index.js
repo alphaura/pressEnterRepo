@@ -1,9 +1,9 @@
 const menuBtn = document.querySelector('.hamburger')
-const moobileMenu = document.querySelector('.mobile-nav')
+const mobileMenu = document.querySelector('.mobile-nav')
 
 menuBtn.addEventListener('click', function() {
     menuBtn.classList.toggle('is-active');
-    moobileMenu.classList.toggle('is-active');
+    mobileMenu.classList.toggle('is-active');
 })
 
 $(document).ready(function(){

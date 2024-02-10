@@ -147,14 +147,39 @@ section {
     background-size: cover;
 }
 
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.owl-nav button {
+    background-color: rgba(136, 136, 136, 0.03);
+}
+
 /* Mobile Strengths Section */
 
 .strengths {
+    background-color: rgba(136, 136, 136, 0.05);
+    max-width: 130rem; 
+    margin: auto; 
+}
+
+.strengths .container {
     padding: 0 2.5rem;
     color: white;
     position: absolute;
     z-index: 99;
     top: 40rem;
+    max-width: 130rem;
+    margin: auto;
 }
 
 .card1, .card2, .card3 {
@@ -162,23 +187,19 @@ section {
     margin-bottom: 1rem;
 }
 
-.card1 img, .card2 img, .card3 img {
-    border-radius: 2rem;
-}
-
-.strengths p {
+.strengths .container p {
     font-size: 1.2rem;
 }
 
-.strengths .top-card p {
+.strengths .container .top-card p {
     font-weight: 600;
 }
 
-.strengths .bottom-card p {
+.strengths .container .bottom-card p {
     line-height: 1.65;
 }
 
-.strengths h3 {
+.strengths .container h3 {
     font-size: 2.5rem;
     margin: 0;
 }
@@ -189,100 +210,96 @@ section {
     left: 0;
     padding: 2rem;
     background-color: rgba(23, 22, 26, 0.83);
-    border-radius: 2rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+@media ( min-width: 769px ) {
 
-/* 
+    /* Hero Image */
+    .hero-bg1, .hero-bg2 {
+        min-height: 70rem;
+    }
 
+    /* Strengths Section */
 
- <section class="strengths">
-    <div class="card1">
-        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
-        <div class="card-content">
-            <div class="top-card">
-                <p>ORGANISATION</p>
-                <h3>Solid & fluid</h3>
-            </div>
-            <div class="bottom-card">
-                <p>We are a growing, skilled organisation who prides ourselves on our ability to quickly adapt and overcome entrepreneurial challenges in dynamic markets.</p>
-            </div>
-        </div>
-    </div>
-    <div class="card2">
-        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
-        <div class="card-content">
-            <div class="top-card">
-                <p>EXPERTISE</p>
-                <h3>Knowledge meets experience</h3>
-            </div>
-            <div class="bottom-card">
-                <p>PressEnter is the crossroads where industry knowledge meets hands-on experience. We employ the best talents in the industry, or we make them ourselves.</p>
-            </div>
-        </div>
-    </div>
-    <div class="card3">
-        <img src="assets/imgs/strength1.png" alt="Organisation Strength">
-        <div class="card-content">
-            <div class="top-card">
-                <p>CULTURE</p>
-                <h3>People focus</h3>
-            </div>
-            <div class="bottom-card">
-                <p>It's not just what we deliver, but how we deliver it. We operate on a foundation of transparency, camaraderie and mentorship. Our team members are the only 
-                    things better than our products, and we don't let them forget it.</p>
-            </div>
-        </div>
-    </div>*/
+    .strengths .container  {
+        display: flex;
+        top: 70rem;
+    }
 
+    .card2 {
+        margin-inline: 1rem;
+    }
 
+    /* Desktop Nav Bar */
 
+    .mobile-header {
+        display: none;
+    }
 
+    .desktop-nav {
+        display: block;
+        
+    }
 
+    .desktop-nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.2rem 2rem;
+    }
 
+    .menu {
+        display: flex;
+    }
 
+    .menu a {
+        text-decoration: none;
+        color: rgb(141, 141, 141);
+        padding-right: 2rem;
+        font-size: 1.56rem;
+    }
 
+    .menu a:last-child {
+        padding-right: 0;
+    }
 
+    .menu a:hover {
+        color: #3c54e5;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Desktop Nav Bar
-
-.desktop-nav .container{
-    display: flex;
-    align-items: center;
+    .desktop-nav img {
+        max-height: 3.5rem;
+    }
 }
 
-.desktop-nav .container ul {
-    display: flex;
-} */
+@media ( min-width: 1024px ) {
 
+    /* Desktop Nav */
 
+    .desktop-nav {
+        max-width: 130rem;  
+        margin: 0 auto; 
+    }
 
+    /* Strengths Section */
 
-/* 
-<nav class="desktop-nav">
-    <img src="assets/imgs/PressEnter-Logo-Animated-Black.gif" alt="PressEnter Animated Logo">
-    <ul>
-        <a href=""><li>Home</li></a>
-        <a href=""><li>Careers</li></a>
-        <a href=""><li>Brands</li></a>
-        <a href=""><li>About Us</li></a>
-        <a href=""><li>News</li></a>
-        <a href=""><li>Contact</li></a>
-    </ul>
-</nav> */
+    .card-content {
+        padding: 4rem;
+    }
+
+    .strengths .container .top-card p {
+        font-size: 1.4rem;    
+    }
+    
+    .strengths .container .bottom-card p {
+        font-size: 1.5rem;
+    }
+    
+    .strengths .container h3 {
+        font-size: 3.4rem;
+    }
+}
