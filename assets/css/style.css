@@ -136,7 +136,7 @@ header {
 
 /* Mobile hero */
 
-#hero {
+.hero {
     padding: 0;
     position: relative;
 }
@@ -242,13 +242,13 @@ header {
 
 /* Company Showcase */
 
-#company-showcase {
+.company-showcase {
     background-color: #f9f9f9;
     padding-top: 130rem;
     padding-inline: 2.5rem;
 }
 
-#company-showcase .container {
+.company-showcase .container {
     display: block;
     margin: 0 auto;
 }
@@ -257,6 +257,7 @@ header {
     min-height: 30rem;
     background: url(../imgs/companyBuilding.jpg) no-repeat center; 
     background-size: cover;
+    border-radius: .5rem;
 }
 
 .company-review h4{
@@ -271,19 +272,19 @@ header {
 /* To fix top padding */
 
 @media ( min-width: 437px ) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 140rem;
     }
 }
 
 @media ( min-width: 461px ) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 145rem;
     }
 }
 
 @media ( min-width: 477px ) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 155rem;
     }
 }
@@ -306,11 +307,35 @@ header {
     line-height: 1.65;
 }
 
+.values a {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #3c54e5;
+    padding: 1.4rem 1.8rem;
+    margin: 0 auto;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+
+.values span {
+    display: inline-block;
+    padding-left: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover span {
+    transform: translateX(1rem);
+
+}
+
 .value-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding-top: 2rem;
+    padding-block: 2rem 4rem;
     max-width: 50rem;
     margin: 0 auto;
 }
@@ -318,6 +343,7 @@ header {
 .value1, .value2, .value3, .value4 {
     position: relative;
     overflow: hidden;
+    border-radius: .5rem;
 }
 
 .value1 img, .value2 img, .value3 img, .value4 img{
@@ -332,6 +358,148 @@ header {
 .value1:hover img, .value2:hover img, .value3:hover img, .value4:hover img{
     transform: scale(1.2);
 }
+
+/* Stats Section */
+
+.numbers {
+    padding-top: 0;
+    display: block;
+}
+
+.numbers .container {
+    color: white;
+    position: relative;
+}
+
+.numbers .bg-img {
+    background: url(/assets/imgs/stats.jpg);
+    background-size: cover;
+    min-height: 70rem;
+}
+
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.stats .row1 {
+    display: flex;
+    height: 9rem;
+    align-items: center;
+}
+
+.row1 p {
+    font-size: 4rem;
+}
+
+.row1 .plus {
+    font-size: 3rem;
+}
+
+.stats img {
+    min-width: 5rem;
+    fill: #f9f9f9;
+    margin-right: 1rem;
+}
+
+.stats1, .stats2, .stats3, .stats4 {
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.stats1 {
+    background-color: #FF535FED;
+}
+
+.stats1 img {
+    max-width: 5rem;
+}
+
+.stats2 {
+    background-color: #1DDBBBED;
+}
+
+.stats3 {
+    background-color: #6E14DEED;
+}
+
+.stats4 {
+    background-color: #E4CF1DDE;
+}
+
+.stats .row2 p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Brands Section */
+
+.brands {
+    padding-inline: 2.5rem;
+    padding-top: 0;
+}
+
+.brands h3 {
+    font-size: 3.6rem;
+    margin-top: 0;
+}
+
+.brands-overview {
+    font-size: 1.5rem;
+    line-height: 1.65;
+    padding-bottom: 3rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.brands-list p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.brands-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+}
+
+.brands-list img {
+    transition: transform 0.3s ease-in-out ;
+}
+
+.brands-list img:hover {
+    transform: translateY(-1rem);
+}
+
+/* 
+<section class="brands">
+    <div class="container">
+        <h3>Our Brands</h3>
+        <div class="brands-list">
+            <img src="assets/imgs/brand1.png" alt="XL Bet casino">
+            <img src="assets/imgs/brand2.png" alt="21.com casino">
+            <img src="assets/imgs/brand3.png" alt="Nitro casino">
+            <img src="assets/imgs/brand4.png" alt="Just spin casino">
+            <img src="assets/imgs/brand5.png" alt="Ultra casino">
+            <img src="assets/imgs/brand6.png" alt="Rapid casino">
+            <img src="assets/imgs/brand7.png" alt="Neon Vegas casino">
+            <img src="assets/imgs/brand8.jpg" alt="Casino fest">
+            <img src="assets/imgs/brand9.png" alt="New brand coming soon">
+        </div>
+    </div>
+</section>
+
+*/
 
 
 
@@ -405,14 +573,14 @@ header {
 
     /* Company Showcase */
 
-    #company-showcase {
+    .company-showcase {
         padding-top: 15rem;
     }
     
-    #company-showcase .container {
+    .company-showcase .container {
         display: flex;
         align-items: center;
-        max-width: 125rem;
+        max-width: 150rem;
         margin: 0 auto;
     }
     
@@ -435,7 +603,7 @@ header {
     /* Values Section */
 
     .values .container {
-        max-width: 125rem;
+        max-width: 150rem;
         margin: 0 auto;
         text-align: center;
     }
@@ -451,33 +619,41 @@ header {
         grid-template-columns: repeat(4,1fr);
     }
 
+    /* Stats Section*/
+
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 150rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /* Brands Section */
+
+    .brands .container {
+        max-width: 120rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .brands-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem 2rem;
+    }
+
 }
 
-/* 
-<section class="values">
-    <h3>Company Values</h3>
-    <p>At PressEnter, we’re contributing to the iGaming industry with cutting-edge innovations and fresh perspectives. Join us in our quest to challenge the status quo and redefine the future 
-        of online gaming.</p>
-    <div class="value-cards">
-        <img src="assets/imgs/value1.png" alt="Company Value - Dare to do it">
-        <img src="assets/imgs/value2.png" alt="Company Value - Own your action">
-        <img src="assets/imgs/value3.png" alt="Company Value - Strive for excellence">
-        <img src="assets/imgs/value4.png" alt="Company Value - Together we PressEnter">
-    </div>
-</section>
-
-*/
 
 /* To fix top padding */
 
 @media ( min-width: 851px ) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 20rem;
     }
 }
 
 @media ( min-width: 967px ) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 25rem;
     }
 }
@@ -515,13 +691,13 @@ header {
 
     /* Company Showcase */
 
-    #company-showcase {
+    .company-showcase {
         padding-top: 30rem;
     }
 }
 
 @media ( min-width: 1203px) {
-    #company-showcase {
+    .company-showcase {
         padding-top: 35rem;
     }
 }
