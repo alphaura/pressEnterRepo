@@ -481,30 +481,6 @@ a:hover span {
     transform: translateY(-1rem);
 }
 
-/* 
-<section class="brands">
-    <div class="container">
-        <h3>Our Brands</h3>
-        <div class="brands-list">
-            <img src="assets/imgs/brand1.png" alt="XL Bet casino">
-            <img src="assets/imgs/brand2.png" alt="21.com casino">
-            <img src="assets/imgs/brand3.png" alt="Nitro casino">
-            <img src="assets/imgs/brand4.png" alt="Just spin casino">
-            <img src="assets/imgs/brand5.png" alt="Ultra casino">
-            <img src="assets/imgs/brand6.png" alt="Rapid casino">
-            <img src="assets/imgs/brand7.png" alt="Neon Vegas casino">
-            <img src="assets/imgs/brand8.jpg" alt="Casino fest">
-            <img src="assets/imgs/brand9.png" alt="New brand coming soon">
-        </div>
-    </div>
-</section>
-
-*/
-
-
-
-
-
 /* Tablet Screen */
 
 @media ( min-width: 769px ) {
@@ -643,7 +619,6 @@ a:hover span {
 
 }
 
-
 /* To fix top padding */
 
 @media ( min-width: 851px ) {
@@ -695,6 +670,8 @@ a:hover span {
         padding-top: 30rem;
     }
 }
+
+/* To fix top padding */
 
 @media ( min-width: 1203px) {
     .company-showcase {
