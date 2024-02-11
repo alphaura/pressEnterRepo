@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    background-color: rgba(136, 136, 136, 0.05);
+
 }
 
 img {
@@ -19,10 +21,18 @@ img {
 
 section {
     padding: 5rem 0;
+    
 }
 
 
 /* Mobile Nav Bar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: white;
+}
 
 .desktop-nav {
     display: none;
@@ -167,9 +177,8 @@ section {
 /* Mobile Strengths Section */
 
 .strengths {
-    background-color: rgba(136, 136, 136, 0.05);
-    max-width: 130rem; 
-    margin: auto; 
+    max-width: 50rem; 
+    margin: auto;
 }
 
 .strengths .container {
@@ -178,7 +187,7 @@ section {
     position: absolute;
     z-index: 99;
     top: 40rem;
-    max-width: 130rem;
+    max-width: 50rem;
     margin: auto;
 }
 
@@ -193,7 +202,7 @@ section {
     transition: all 0.3s;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     transform: scale(1);
 }
 
@@ -230,26 +239,84 @@ section {
     justify-content: space-between;
 }
 
-@media ( min-width: 769px ) {
 
+/* Company Showcase */
+
+#company-showcase {
+    background-color: #f9f9f9;
+    padding-top: 130rem;
+    padding-inline: 2.5rem;
+}
+
+#company-showcase .container {
+    display: block;
+    margin: 0 auto;
+}
+
+.company-img {
+    min-height: 30rem;
+    background: url(../imgs/companyBuilding.jpg) no-repeat center; 
+    background-size: cover;
+}
+
+.company-review h4{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.company-review p {
+    font-size: 1.6rem;
+}
+
+/* To fix top padding */
+
+@media ( min-width: 437px ) {
+    #company-showcase {
+        padding-top: 140rem;
+    }
+}
+
+@media ( min-width: 461px ) {
+    #company-showcase {
+        padding-top: 145rem;
+    }
+}
+
+@media ( min-width: 4px ) {
+    #company-showcase {
+        padding-top: 155rem;
+    }
+}
+
+
+
+/* Tablet Screen */
+
+@media ( min-width: 769px ) {
+    
     /* Hero Image */
     .hero-bg1, .hero-bg2 {
         min-height: 70rem;
     }
-
+    
     /* Strengths Section */
 
+    .strengths {
+        max-width: 130rem;
+    }
+    
     .strengths .container  {
         display: flex;
         top: 70rem;
+        max-width: 130rem;
     }
 
     .card2 {
         margin-inline: 1rem;
     }
-
-    /* Desktop Nav Bar */
-
+    
+    /* Tablet/Desktop Nav Bar */
+    
     .mobile-header {
         display: none;
     }
@@ -258,21 +325,21 @@ section {
         display: block;
         
     }
-
+    
     .desktop-nav .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3.2rem 2rem;
     }
-
+    
     .menu {
         display: flex;
     }
-
+    
     .menu a {
         text-decoration: none;
-        color: rgb(141, 141, 141);
+        color: black;
         padding-right: 2rem;
         font-size: 1.56rem;
     }
@@ -284,27 +351,91 @@ section {
     .menu a:hover {
         color: #3c54e5;
     }
-
+    
     .desktop-nav img {
         max-height: 3.5rem;
     }
+
+    /* Company Showcase */
+
+    #company-showcase {
+        padding-top: 15rem;
+    }
+    
+    #company-showcase .container {
+        display: flex;
+        align-items: center;
+        max-width: 125rem;
+        margin: 0 auto;
+    }
+    
+    .company-img {
+        width: 100%;
+        min-width: 45rem;
+        margin-right: 4rem;
+        min-height: 40rem;
+        max-width: 80rem;
+    }
+    
+    .company-review h4{
+        font-size: 2rem;
+    }
+    
+    .company-review p {
+        font-size: 1.2rem;
+        
+        
+    }
+
 }
 
+/* To fix top padding */
+
+@media ( min-width: 851px ) {
+    #company-showcase {
+        padding-top: 20rem;
+    }
+}
+
+@media ( min-width: 967px ) {
+    #company-showcase {
+        padding-top: 25rem;
+    }
+}
+
+/* 
+<section id="company-showcase">
+    <div class="container">
+        <div class="company-img"></div>
+        <div class="company-review">
+            <h4>A team of creatives and technicians trailblazing new pathways in iGaming and Sportsbetting.</h4>
+            <p>_ We are iGaming</p>
+            <p>Our team is more than capable. We are innovators, creators, and collaborators given the tools we need to succeed.</p>
+            <p>_ Top talent</p>
+            <p>Our teams employ the best talents in the industry, or we grow them ourselves.</p>
+        </div>
+    </div>
+</section>
+
+*/
+
+/* Desktop Screen */
+
 @media ( min-width: 1024px ) {
-
+    
     /* Desktop Nav */
-
+    
     .desktop-nav {
         max-width: 130rem;  
         margin: 0 auto; 
     }
-
+    
     /* Strengths Section */
-
+    
     .card-content {
         padding: 4rem;
     }
-
+    
     .strengths .container .top-card p {
         font-size: 1.4rem;    
     }
@@ -315,5 +446,17 @@ section {
     
     .strengths .container h3 {
         font-size: 3.4rem;
+    }
+
+    /* Company Showcase */
+
+    #company-showcase {
+        padding-top: 30rem;
+    }
+}
+
+@media ( min-width: 1203px) {
+    #company-showcase {
+        padding-top: 35rem;
     }
 }
