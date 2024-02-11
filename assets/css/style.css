@@ -145,7 +145,7 @@ header {
     position: relative;
     min-height: 40rem;
     overflow: hidden;
-    background: url(/assets/imgs/headerBanner1.png) no-repeat center;
+    background: url(../imgs/headerBanner1.png) no-repeat center;
     background-size: cover;
 }
 
@@ -153,7 +153,7 @@ header {
     position: relative;
     height: 40rem;
     overflow: hidden;
-    background: url(/assets/imgs/headerBanner2.jpg) no-repeat center;
+    background: url(../imgs/headerBanner2.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -371,7 +371,7 @@ a:hover span {
 }
 
 .numbers .bg-img {
-    background: url(/assets/imgs/stats.jpg);
+    background: url(../imgs/stats.jpg);
     background-size: cover;
     min-height: 70rem;
 }
@@ -494,33 +494,33 @@ a:hover span {
 }
 
 .lifestyle1 {
-    background: url(/assets/imgs/life1.jpg) center / cover;
+    background: url(../imgs/life1.jpg) center / cover;
 }
 
 .lifestyle2 {
-    background: url(/assets/imgs/life2.jpg) center / cover;
+    background: url(../imgs/life2.jpg) center / cover;
 }
 
 .lifestyle3 {
-    background: url(/assets/imgs/life3.jpg) center / cover;
+    background: url(../imgs/life3.jpg) center / cover;
 }
 
 .lifestyle4 {
-    background: url(/assets/imgs/life4.jpg) center / cover;
+    background: url(../imgs/life4.jpg) center / cover;
 }
 
 .lifestyle5 {
-    background: url(/assets/imgs/life5.jpg) center / cover;
+    background: url(../imgs/life5.jpg) center / cover;
 }
 
 .lifestyle6 {
-    background: url(/assets/imgs/life6.jpg) center / cover;
+    background: url(../imgs/life6.jpg) center / cover;
 }
 
 /* Contact Section */
 
 .contact {
-    background: url(/assets/imgs/contactBanner.jpg) center / cover;
+    background: url(../imgs/contactBanner.jpg) center / cover;
     min-height: 40rem;
 }
 
