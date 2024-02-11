@@ -282,11 +282,58 @@ header {
     }
 }
 
-@media ( min-width: 4px ) {
+@media ( min-width: 477px ) {
     #company-showcase {
         padding-top: 155rem;
     }
 }
+
+/* Values Section */
+
+.values {
+    padding-inline: 2.5rem;
+    background-color: white;
+}
+
+.values h3 {
+    font-size: 3.6rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.values p {
+    font-size: 1.5rem;
+    line-height: 1.65;
+}
+
+.value-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.value1, .value2, .value3, .value4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.value1 img, .value2 img, .value3 img, .value4 img{
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+
+.value1:hover img, .value2:hover img, .value3:hover img, .value4:hover img{
+    transform: scale(1.2);
+}
+
+
 
 
 
@@ -383,11 +430,43 @@ header {
     
     .company-review p {
         font-size: 1.2rem;
-        
-        
+    }
+
+    /* Values Section */
+
+    .values .container {
+        max-width: 125rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .values p {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .value-cards {
+        max-width: 100%;
+        grid-template-columns: repeat(4,1fr);
     }
 
 }
+
+/* 
+<section class="values">
+    <h3>Company Values</h3>
+    <p>At PressEnter, we’re contributing to the iGaming industry with cutting-edge innovations and fresh perspectives. Join us in our quest to challenge the status quo and redefine the future 
+        of online gaming.</p>
+    <div class="value-cards">
+        <img src="assets/imgs/value1.png" alt="Company Value - Dare to do it">
+        <img src="assets/imgs/value2.png" alt="Company Value - Own your action">
+        <img src="assets/imgs/value3.png" alt="Company Value - Strive for excellence">
+        <img src="assets/imgs/value4.png" alt="Company Value - Together we PressEnter">
+    </div>
+</section>
+
+*/
 
 /* To fix top padding */
 
@@ -403,21 +482,7 @@ header {
     }
 }
 
-/* 
-<section id="company-showcase">
-    <div class="container">
-        <div class="company-img"></div>
-        <div class="company-review">
-            <h4>A team of creatives and technicians trailblazing new pathways in iGaming and Sportsbetting.</h4>
-            <p>_ We are iGaming</p>
-            <p>Our team is more than capable. We are innovators, creators, and collaborators given the tools we need to succeed.</p>
-            <p>_ Top talent</p>
-            <p>Our teams employ the best talents in the industry, or we grow them ourselves.</p>
-        </div>
-    </div>
-</section>
 
-*/
 
 /* Desktop Screen */
 
