@@ -579,6 +579,103 @@ a:hover span {
     transition: transform 0.2s ease-in-out;
 }
 
+/* Footer Section */
+
+footer {
+    background-color: #17161A;
+}
+
+footer .container {
+    padding: 4rem 2.5rem;
+}
+
+footer h5, footer p {
+    margin: 0;
+}
+
+footer h5 {
+    color: #6A696C;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.footer-content, .part1, .col4 a {
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    font-weight: 200;
+    text-decoration: none;
+    display: block;
+    line-height: 1.65;
+}
+
+
+.col4 a, .col4 .footer-content {
+    padding-bottom: 0;
+}
+
+.office-name {
+    font-weight: 400;
+}
+
+.copyright {
+    font-size: 1.6rem;
+    border-top: 1px solid whitesmoke;
+}
+
+.copyright p {
+    padding: 2.5rem;
+    line-height: 1.65;
+    color: white;
+}
+
+
+
+
+/* 
+
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="col1">
+                <h5>Fb. / Ig.</h5>
+            </div>
+            <div class="col2">
+                <h5>Office</h5>
+                <div class="footer-content">
+                    <p><span class="office-name">PressEnter Group</span> The Ferries Business Centre,9 Guze Fava Street,Sliema SLM1632,Malta</p>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footer-content">
+                    <div class="part1">
+                        <h5>Work with us</h5>
+                        <p>Interested in working with us? Current openings</p>
+                    </div>
+                    <div class="part2">
+                        <h5>Contact</h5>
+                        <p>(+356) 9949 6223</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <h5>Links</h5>
+                <div class="footer-content">
+                    <a href="">Cookie Policy</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>PressEnter is operating its brands through BP Group Limited which is a company registered in Malta with company number C-52434, licensed and regulated in the
+                European Union by the Malta Gaming Authority: License number MGA/B2C/203/2011.</p>
+        </div>
+</footer>
+
+
+*/
+
 
 /* Tablet Screen */
 
