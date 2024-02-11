@@ -328,7 +328,6 @@ header {
 
 a:hover span {
     transform: translateX(1rem);
-
 }
 
 .value-cards {
@@ -518,6 +517,68 @@ a:hover span {
     background: url(/assets/imgs/life6.jpg) center / cover;
 }
 
+/* Contact Section */
+
+.contact {
+    background: url(/assets/imgs/contactBanner.jpg) center / cover;
+    min-height: 40rem;
+}
+
+.contact .container {
+    padding-inline: 2.5rem;
+    max-width: 125rem;
+    margin: 0 auto;
+}
+
+.talkToUs p {
+    font-size: 1.4rem;
+    color: #7d7c80;
+}
+
+.talkToUs h4 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 0;
+    max-width: 40rem;
+}
+
+.top-section {
+    border-bottom: 1px solid rgb(110, 110, 110);
+    padding-bottom: 7rem;
+}
+
+.top-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.56rem;
+    border: 1px solid white;
+    padding: 1.4rem 1.8rem;
+    border-radius: .5rem;
+    transition: .4s ease-in-out all;
+    height: 100%;
+}
+
+.top-section a:hover {
+    color: black;
+    background-color: #E4CF1D;
+    border:  1px solid #E4CF1D;
+}
+
+.bottom-section p {
+    color: white;
+    line-height: 1.65;
+    font-size: 1.56rem;
+    padding-top: 3rem;
+    max-width: 60rem;
+}
+
+.top-section span {
+    display: inline-block;
+    padding-left: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
 
 /* Tablet Screen */
 
@@ -656,6 +717,17 @@ a:hover span {
 
     .lifestyle-container {
         max-width: 45rem;
+    }
+
+    /* Contact Section */
+
+    .contact {
+        padding-block: 8rem;
+    }
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
