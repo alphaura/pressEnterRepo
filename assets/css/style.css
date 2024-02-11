@@ -440,14 +440,19 @@ a:hover span {
     margin-top: 0;
 }
 
-/* Brands Section */
+/* Brands Section, PressEnter Lifestyle section */
 
 .brands {
     padding-inline: 2.5rem;
     padding-top: 0;
 }
 
-.brands h3 {
+.PressEnter {
+    background-color: white;
+    padding-inline: 2.5rem;
+}
+
+.brands h3, .PressEnter h3 {
     font-size: 3.6rem;
     margin-top: 0;
 }
@@ -466,20 +471,53 @@ a:hover span {
     text-align: left;
 }
 
-.brands-list {
+.brands-list, .lifestyle {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
+    flex: 1;
 }
 
-.brands-list img {
+
+.brands-list img, .lifestyle-container {
     transition: transform 0.3s ease-in-out ;
 }
 
-.brands-list img:hover {
+.brands-list img:hover, .lifestyle-container:hover {
     transform: translateY(-1rem);
 }
+
+.lifestyle-container {
+    min-width: 15rem;
+    height: 20rem;
+    background-color: black;
+}
+
+.lifestyle1 {
+    background: url(/assets/imgs/life1.jpg) center / cover;
+}
+
+.lifestyle2 {
+    background: url(/assets/imgs/life2.jpg) center / cover;
+}
+
+.lifestyle3 {
+    background: url(/assets/imgs/life3.jpg) center / cover;
+}
+
+.lifestyle4 {
+    background: url(/assets/imgs/life4.jpg) center / cover;
+}
+
+.lifestyle5 {
+    background: url(/assets/imgs/life5.jpg) center / cover;
+}
+
+.lifestyle6 {
+    background: url(/assets/imgs/life6.jpg) center / cover;
+}
+
 
 /* Tablet Screen */
 
@@ -604,17 +642,20 @@ a:hover span {
         transform: translate(-50%);
     }
 
-    /* Brands Section */
+/* Brands Section, PressEnter Lifestyle section */
 
-    .brands .container {
+    .brands .container, .PressEnter .container {
         max-width: 120rem;
         margin: 0 auto;
         text-align: center;
     }
 
-    .brands-list {
+    .brands-list, .lifestyle {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem 2rem;
+    }
+
+    .lifestyle-container {
+        max-width: 45rem;
     }
 
 }
@@ -668,6 +709,12 @@ a:hover span {
 
     .company-showcase {
         padding-top: 30rem;
+    }
+
+    /* PressEnter Lifestyle Section */
+
+    .lifestyle-container {
+        min-height: 30rem;
     }
 }
 
