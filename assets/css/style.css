@@ -94,8 +94,8 @@ header {
     top: 0;
     right: 100%;
     width: 100%;
+    height: 100vh;
     min-height: 100dvh;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     z-index: 100;
@@ -126,10 +126,12 @@ header {
 
 .search {
     max-width: fit-content;
-    margin-top: 25rem;
+    margin-bottom: 2rem;
     background-color: rgba(136, 136, 136, 0.03);
     padding: 2rem;
     border-radius: 5rem;
+    position: fixed;
+    bottom: 0;
 }
 
 .search img {
@@ -377,6 +379,53 @@ a:hover span {
     transform: translateY(0);
     opacity: 1;
 }
+
+/* Modal Pop-up Section */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  #dateTime {
+    font-size: 1.2rem;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /* Stats Section */
 
@@ -774,6 +823,12 @@ footer a:hover {
         max-width: 100%;
         grid-template-columns: repeat(4,1fr);
     }
+
+    /* Modal Pop-up Section */
+
+    .modal-content {
+        max-width: 50rem;
+      }
 
     /* Stats Section*/
 

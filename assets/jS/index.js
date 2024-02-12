@@ -53,17 +53,29 @@ $(document).ready(function(){
 
 // Pop-up message linked to .learn-more showcasing the current time and date
 
+const modal = document.getElementById("myModal");
+const btn = document.querySelector(".learn-more");
+const span = document.getElementsByClassName("close")[0];
 
-document.addEventListener('DOMContentLoaded', function() {
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    event.preventDefault();
+  modal.style.display = "block";
 
-    document.querySelector('.learn-more').addEventListener('click', function(event) {
-        event.preventDefault();
+  const currentDate = new Date();
+  const dateTime = currentDate.toLocaleString();
 
-        const currentDate = new Date();
-        const currentDateTime = currentDate.toLocaleString();
+  document.getElementById("dateTime").innerHTML = "Clicked at: " + dateTime;
+}
 
-        const popupMessage = `The pop-up has been clicked on ${currentDateTime}.`;
-        
-        alert(popupMessage);
-    });
-});
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

@@ -4,8 +4,8 @@
 
 In this project I have worked on replicating this Figma design;
 
- https://www.figma.com/file/5daB21Co5DjlcbL7htvdHv/Junior-Dev-Test?type=design&node-id=0-1&mode=design&t=UUpQV3NlJXyF58QL-0.
- 
+https://www.figma.com/file/5daB21Co5DjlcbL7htvdHv/Junior-Dev-Test?type=design&node-id=0-1&mode=design&t=UUpQV3NlJXyF58QL-0.
+
 The purpose of this project was to showcase my skills into developing a responsive web page from this design. I have shifted between the design itself and also the main website which is
 https://pressenter.group/, in order to understand the responsiveness, so that I can develop my version as close as possible, and potentially slightly improved.
 
@@ -64,8 +64,8 @@ not the actual container.
 
 ## Values Section
 
-This section has the last checkbox as part of the main task, which was to make a pop-up trigger upon the "Learn More" button being clicked. For this, I used javaScript and made the pop-up
-as an alert, that pulls the current date and time from the user's device.
+This section has the last checkbox as part of the main task, which was to make a pop-up trigger upon the "Learn More" button being clicked. For this, I used javaScript and made a pop-up
+that pulls the current date and time from the user's device.
 
 As an added feature to the section, I have made the value cards zoom-in on hover to give more importance to them, and also made it slide-up when the section is visible in viewport.
 
