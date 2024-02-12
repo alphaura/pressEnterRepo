@@ -294,6 +294,7 @@ header {
 .values {
     padding-inline: 2.5rem;
     background-color: white;
+    position: relative;
 }
 
 .values h3 {
@@ -307,7 +308,7 @@ header {
     line-height: 1.65;
 }
 
-.values a {
+.learn-more{
     font-size: 1.5rem;
     color: white;
     background-color: #3c54e5;
@@ -318,6 +319,11 @@ header {
     justify-content: center;
     text-decoration: none;
     border-radius: .5rem;
+
+}
+
+.learn-more .show {
+    left: 0;
 }
 
 .values span {
@@ -356,6 +362,18 @@ a:hover span {
 
 .value1:hover img, .value2:hover img, .value3:hover img, .value4:hover img{
     transform: scale(1.2);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Stats Section */
@@ -593,13 +611,14 @@ footer h5, footer p {
     margin: 0;
 }
 
-footer h5 {
+footer h5, .col1 a {
     color: #6A696C;
     font-size: 1.6rem;
     padding-bottom: 2rem;
+    text-decoration: none;
 }
 
-.footer-content, .part1, .col4 a {
+.footer-content, .part1, .col3 a ,.col4 a {
     color: white;
     font-size: 1.6rem;
     padding-bottom: 2rem;
@@ -607,6 +626,10 @@ footer h5 {
     text-decoration: none;
     display: block;
     line-height: 1.65;
+}
+
+footer a:hover {
+    color: #E4CF1D;
 }
 
 
@@ -627,54 +650,13 @@ footer h5 {
     padding: 2.5rem;
     line-height: 1.65;
     color: white;
+    max-width: 125rem;
+    margin: 0 auto;
 }
 
 
 
 
-/* 
-
-<footer>
-    <div class="container">
-        <div class="footer-top">
-            <div class="col1">
-                <h5>Fb. / Ig.</h5>
-            </div>
-            <div class="col2">
-                <h5>Office</h5>
-                <div class="footer-content">
-                    <p><span class="office-name">PressEnter Group</span> The Ferries Business Centre,9 Guze Fava Street,Sliema SLM1632,Malta</p>
-                </div>
-            </div>
-            <div class="col3">
-                <div class="footer-content">
-                    <div class="part1">
-                        <h5>Work with us</h5>
-                        <p>Interested in working with us? Current openings</p>
-                    </div>
-                    <div class="part2">
-                        <h5>Contact</h5>
-                        <p>(+356) 9949 6223</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <h5>Links</h5>
-                <div class="footer-content">
-                    <a href="">Cookie Policy</a>
-                    <a href="">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="copyright">
-            <p>PressEnter is operating its brands through BP Group Limited which is a company registered in Malta with company number C-52434, licensed and regulated in the
-                European Union by the Malta Gaming Authority: License number MGA/B2C/203/2011.</p>
-        </div>
-</footer>
-
-
-*/
 
 
 /* Tablet Screen */
@@ -728,7 +710,9 @@ footer h5 {
         text-decoration: none;
         color: black;
         padding-right: 2rem;
-        font-size: 1.56rem;
+        font-size: 1.6rem;
+        padding-inline: 2.4rem;
+        font-weight: bold;
     }
 
     .menu a:last-child {
@@ -740,7 +724,7 @@ footer h5 {
     }
     
     .desktop-nav img {
-        max-height: 3.5rem;
+        max-height: 4rem;
     }
 
     /* Company Showcase */
@@ -827,7 +811,60 @@ footer h5 {
         justify-content: space-between;
     }
 
+    /* Footer Section */
+    .footer-top {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        max-width: 163rem;
+        margin: 0 auto;
+    }
 }
+
+/* 
+
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="col1">
+                <h5>Fb. / Ig.</h5>
+            </div>
+            <div class="col2">
+                <h5>Office</h5>
+                <div class="footer-content">
+                    <p><span class="office-name">PressEnter Group</span> The Ferries Business Centre,9 Guze Fava Street,Sliema SLM1632,Malta</p>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footer-content">
+                    <div class="part1">
+                        <h5>Work with us</h5>
+                        <p>Interested in working with us? Current openings</p>
+                    </div>
+                    <div class="part2">
+                        <h5>Contact</h5>
+                        <p>(+356) 9949 6223</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <h5>Links</h5>
+                <div class="footer-content">
+                    <a href="">Cookie Policy</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>PressEnter is operating its brands through BP Group Limited which is a company registered in Malta with company number C-52434, licensed and regulated in the
+                European Union by the Malta Gaming Authority: License number MGA/B2C/203/2011.</p>
+        </div>
+</footer>
+
+
+*/
+
 
 /* To fix top padding */
 
@@ -891,6 +928,6 @@ footer h5 {
 
 @media ( min-width: 1203px) {
     .company-showcase {
-        padding-top: 35rem;
+        padding-block: 40rem 9rem;
     }
 }
