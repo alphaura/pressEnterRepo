@@ -1,3 +1,6 @@
+
+// Owl Carousel for the hero section
+
 const menuBtn = document.querySelector('.hamburger')
 const mobileMenu = document.querySelector('.mobile-nav')
 
@@ -22,6 +25,9 @@ $(document).ready(function(){
         }
     })
   });
+
+
+//   Shows elements with class of 'reveal' upon scrolled into viewport
 
 
   window.addEventListener('scroll', reveal);
