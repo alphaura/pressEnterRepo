@@ -2,7 +2,10 @@
 
 <!-- Project information -->
 
-In this project I have worked on replicating this Figma design https://www.figma.com/file/5daB21Co5DjlcbL7htvdHv/Junior-Dev-Test?type=design&node-id=0-1&mode=design&t=UUpQV3NlJXyF58QL-0.
+In this project I have worked on replicating this Figma design;
+
+ https://www.figma.com/file/5daB21Co5DjlcbL7htvdHv/Junior-Dev-Test?type=design&node-id=0-1&mode=design&t=UUpQV3NlJXyF58QL-0.
+ 
 The purpose of this project was to showcase my skills into developing a responsive web page from this design. I have shifted between the design itself and also the main website which is
 https://pressenter.group/, in order to understand the responsiveness, so that I can develop my version as close as possible, and potentially slightly improved.
 
