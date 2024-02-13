@@ -52,10 +52,24 @@ header {
 
 .mobile-header .container {
     display: flex;
+    align-items: center;
 }
 
 .mobile-header img {
     max-width: 12rem;
+    margin-left: 1rem;
+}
+
+.hamburger-container {
+    width: 5.7rem;
+    height: 5.7rem;
+    background-color: rgba(136, 136, 136, 0.03);
+    padding: 2rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger {
@@ -67,7 +81,7 @@ header {
     background: none;
     outline: none;
     border: none;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 .hamburger .bar, .hamburger::after{
@@ -112,6 +126,7 @@ header {
     margin-bottom: 2rem;
     text-decoration: none;
     color: black;
+    padding-top: 1rem;
 }
 
 .mobile-nav p {
@@ -440,7 +455,7 @@ a:hover span {
 }
 
 .numbers .bg-img {
-    background: url(../imgs/stats.jpg);
+    background: url(../imgs/stats.jpg) center;
     background-size: cover;
     min-height: 70rem;
 }
@@ -558,7 +573,7 @@ a:hover span {
 
 .lifestyle-container {
     min-width: 15rem;
-    height: 20rem;
+    min-height: 20rem;
     background-color: black;
 }
 
@@ -608,13 +623,12 @@ a:hover span {
     color: white;
     font-size: 4rem;
     font-weight: 400;
-    margin-top: 0;
+    margin-block: 0;
     max-width: 40rem;
 }
 
 .top-section {
     border-bottom: 1px solid rgb(110, 110, 110);
-    padding-bottom: 7rem;
 }
 
 .top-section a {
@@ -634,11 +648,15 @@ a:hover span {
     border:  1px solid #E4CF1D;
 }
 
+.talkToUs-btn {
+    margin-block: 7rem;
+}
+
 .bottom-section p {
     color: white;
     line-height: 1.65;
     font-size: 1.56rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
     max-width: 60rem;
 }
 
@@ -683,6 +701,13 @@ footer a:hover {
     color: #E4CF1D;
 }
 
+.col3 a {
+    display: inline-block;
+}
+
+.col3 .part2 p {
+    font-weight: bold;
+}
 
 .col4 a, .col4 .footer-content {
     padding-bottom: 0;
@@ -760,7 +785,7 @@ footer a:hover {
         color: black;
         padding-right: 2rem;
         font-size: 1.6rem;
-        padding-inline: 2.4rem;
+        padding-inline: 1.9rem;
         font-weight: bold;
     }
 
@@ -798,11 +823,11 @@ footer a:hover {
     }
     
     .company-review h4{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .company-review p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     /* Values Section */
@@ -839,6 +864,10 @@ footer a:hover {
         transform: translate(-50%);
     }
 
+    .numbers .bg-img {
+        min-height: 56rem;
+    }
+
 /* Brands Section, PressEnter Lifestyle section */
 
     .brands .container, .PressEnter .container {
@@ -864,6 +893,15 @@ footer a:hover {
     .top-section {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 6rem;
+    }
+
+    .talkToUs h4 {
+        font-size: 4.5rem;
+    }
+
+    .talkToUs-btn {
+        margin-top: 2rem;
     }
 
     /* Footer Section */
@@ -874,11 +912,25 @@ footer a:hover {
         max-width: 163rem;
         margin: 0 auto;
     }
+
+    /* Footer Section */
+
+    .col3 {
+        max-width: 23rem;
+    }
 }
+
+/* ------------------------------------------------------------------- */
+
 
 /* To fix top padding */
 
 @media ( min-width: 851px ) {
+
+    .menu a {
+        padding-inline: 2.4rem;
+    }
+
     .company-showcase {
         padding-top: 20rem;
     }
@@ -928,6 +980,23 @@ footer a:hover {
         padding-top: 30rem;
     }
 
+    .company-review h4{
+        font-size: 2.5rem;
+    }
+    
+    .company-review p {
+        font-size: 1.6rem;
+    }
+
+    .company-review {
+        padding-left: 5rem;
+        max-width: 40rem;
+    }
+
+    .company-img {
+        min-width: 60rem;
+    }
+
     /* PressEnter Lifestyle Section */
 
     .lifestyle-container {
@@ -940,5 +1009,10 @@ footer a:hover {
 @media ( min-width: 1203px) {
     .company-showcase {
         padding-block: 40rem 9rem;
+    }
+
+    .company-img {
+        min-width: 70rem;
+        min-height: 55rem;
     }
 }
