@@ -81,25 +81,24 @@ header {
     background: none;
     outline: none;
     border: none;
-    /* margin-right: 1rem; */
 }
 
 .hamburger .bar, .hamburger::after{
     content: '';
     display: block;
     width: 100%;
-    height: .2rem;
+    height: .3rem;
     margin: .5rem 0;
     background-color: black;
     transition: 0.4s;
 }
 
 .hamburger.is-active::after {
-    transform: rotate(-45deg) translate(.1rem, -.3rem);
+    transform: rotate(-45deg) translate(.18rem, -.3rem);
 }
 
 .hamburger.is-active .bar {
-    transform: rotate(45deg) translate(.2rem, .4rem);
+    transform: rotate(45deg) translate(.25rem, .35rem);
 }
 
 .mobile-nav {
